@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ru">
     <meta charset="UTF-8">
     <title>homework1 page3</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<header>
-   <img src="img/webLogo.png" alt="logo" width="180">
-    <h1>Основы Web-технологий</h1>
+<header class="menu">
+    <div class="wrapper">
+        <img src="img/webLogo.png" alt="logo" width="180">
+        <h1>Основы Web-технологий</h1>
+    </div>
     <nav>
-        <ul>
+        <ul class="link">
             <li>
                 <a href="index.html">Главная</a>
             </li>
             <li>
                 <a href="web.html">Web-технологии</a>
-                <ul>
-                    <li>
-                        <a href="html5.html">HTML5</a>
-                    </li>
-                    <li>
-                        <a href="css3.html">CSS3</a>
-                    </li>
-                    <li>
-                        <a href="javascript.html">JavaScript</a>
-                    </li>
-                </ul>
             </li>
+            <ul class="link-menu">
+                <li>
+                    <a href="html5.html">HTML5</a>
+                </li>
+                <li>
+                    <a href="css3.html">CSS3</a>
+                </li>
+                <li>
+                    <a href="javascript.html">JavaScript</a>
+                </li>
+            </ul>
             <li>
                 <a href="calculator.html">Калькулятор</a>
             </li>
@@ -36,7 +39,8 @@
         </ul>
     </nav>
 </header>
-<article>
+<article class="wrapper-block">
+<aside class="text-aside">
     <h3>Дополнительная информация</h3>
     <p><b><i>Язык разметки</i></b> в <i>компьютерной</i> терминологии — набор символов или последовательностей, вставляемых в текст для
         передачи информации о его выводе или строении. Принадлежит классу <i>компьютерных языков</i>. Текстовый документ,
@@ -50,8 +54,8 @@
         шифрования является использование <i>ключа</i>, который утверждает выбор конкретного преобразования из совокупности
         возможных для данного алгоритма.
     </p>
-</article>
-<section>
+</aside>
+<section class="text-html">
     <h2>HTML5</h2>
     <p><b><i>HTML</i></b> (от англ. HyperText Markup Language — «язык <i>гипертекстовой</i> разметки») — стандартный <i>язык разметки</i> документов
         во <i>Всемирной паутине</i>. Большинство <i>Web-страниц</i> содержат описание разметки на языке HTML (или XHTML). Язык HTML
@@ -89,9 +93,10 @@
             отправки введённых пользователем данных на сервер. Наиболее популярными на сегодняшний день браузерами являются
             <i>Google Chrome, Mozilla Firefox, Opera, Internet Explorer и Safari</i>.</p>
     </section>
-</section>
-<footer>
     <a href="#top">Вернуться вверх</a>
+</section>
+    </article>
+<footer class="address">
     <address>
         <a href="mailto:mail@mail"><i>Пишите: mail@mail</i></a>
     </address>

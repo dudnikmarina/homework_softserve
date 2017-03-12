@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ru">
     <meta charset="UTF-8">
     <title>homework1 page1</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<header>
-    <img src="img/webLogo.png" alt="logo" width="180">
-    <h1>Основы Web-технологий</h1>
+<header class="menu">
+   <div class="wrapper">
+        <img src="img/webLogo.png" alt="logo" width="180">
+        <h1>Основы Web-технологий</h1>
+   </div>
     <nav>
-        <ul>
+        <ul class="link">
             <li>
                 <a href="index.html">Главная</a>
             </li>
             <li>
                 <a href="web.html">Web-технологии</a>
-                    <ul>
+            </li>
+                    <ul class="link-menu">
                         <li>
                             <a href="html5.html">HTML5</a>
                         </li>
@@ -26,7 +30,6 @@
                             <a href="javascript.html">JavaScript</a>
                         </li>
                     </ul>
-            </li>
             <li>
                 <a href="calculator.html">Калькулятор</a>
             </li>
@@ -36,13 +39,13 @@
         </ul>
     </nav>
 </header>
-<div>
+<div class="text">
     <p>Курс предназначен для <i>широкого</i> круга слушателей, которые хотели бы освоить такие <i>Web-технологии</i> как
         <b><span title="HyperText Markup Language">HTML5</span>, <span title="Cascading Style Sheets">CSS3</span>, JavaScript</b>,
         но не имеют предварительных профильных знаний в этой области.<br> <i>Предварительные знания/навыки:</i> уверенное пользование
         ПК и программным обеспечением. Практическая работа будет проводится с использованием текстового редактора Notepad++.</p>
 </div>
-<footer>
+<footer class="address">
     <address>
         <a href="mailto:mail@mail"><i>Пишите: mail@mail</i></a>
     </address>

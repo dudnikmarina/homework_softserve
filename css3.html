@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ru">
     <meta charset="UTF-8">
     <title>homework1 page4</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<header>
-    <img src="img/webLogo.png" alt="logo" width="180">
-    <h1>Основы Web-технологий</h1>
+<header class="menu">
+    <div class="wrapper">
+        <img src="img/webLogo.png" alt="logo" width="180">
+        <h1>Основы Web-технологий</h1>
+    </div>
     <nav>
-        <ul>
+        <ul class="link">
             <li>
                 <a href="index.html">Главная</a>
             </li>
             <li>
                 <a href="web.html">Web-технологии</a>
-                <ul>
-                    <li>
-                        <a href="html5.html">HTML5</a>
-                    </li>
-                    <li>
-                        <a href="css3.html">CSS3</a>
-                    </li>
-                    <li>
-                        <a href="javascript.html">JavaScript</a>
-                    </li>
-                </ul>
             </li>
+            <ul class="link-menu">
+                <li>
+                    <a href="html5.html">HTML5</a>
+                </li>
+                <li>
+                    <a href="css3.html">CSS3</a>
+                </li>
+                <li>
+                    <a href="javascript.html">JavaScript</a>
+                </li>
+            </ul>
             <li>
                 <a href="calculator.html">Калькулятор</a>
             </li>
@@ -36,7 +39,7 @@
         </ul>
     </nav>
 </header>
-<section>
+<section class="text">
     <h2>CSS3</h2>
     <p><b><i>CSS</i></b> (англ. Cascading Style Sheets — каскадные таблицы стилей) — <i>формальный</i> язык описания внешнего вида
         документа, написанного с использованием <i>языка разметки</i>.</p>
@@ -44,7 +47,7 @@
         <i>языков разметки</i> HTML и XHTML, но может также применяться к любым <i>XML-документам</i>, например, к SVG или XUL.
     </p>
 </section>
-<footer>
+<footer class="address">
     <address>
         <a href="mailto:mail@mail"><i>Пишите: mail@mail</i></a>
     </address>

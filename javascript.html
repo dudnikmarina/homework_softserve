@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ru">
     <meta charset="UTF-8">
     <title>homework1 page5</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<header>
-   <img src="img/webLogo.png" alt="logo" width="180">
-    <h1>Основы Web-технологий</h1>
+<header class="menu">
+    <div class="wrapper">
+        <img src="img/webLogo.png" alt="logo" width="180">
+        <h1>Основы Web-технологий</h1>
+    </div>
     <nav>
-        <ul>
+        <ul class="link">
             <li>
                 <a href="index.html">Главная</a>
             </li>
             <li>
                 <a href="web.html">Web-технологии</a>
-                <ul>
-                    <li>
-                        <a href="html5.html">HTML5</a>
-                    </li>
-                    <li>
-                        <a href="css3.html">CSS3</a>
-                    </li>
-                    <li>
-                        <a href="javascript.html">JavaScript</a>
-                    </li>
-                </ul>
             </li>
+            <ul class="link-menu">
+                <li>
+                    <a href="html5.html">HTML5</a>
+                </li>
+                <li>
+                    <a href="css3.html">CSS3</a>
+                </li>
+                <li>
+                    <a href="javascript.html">JavaScript</a>
+                </li>
+            </ul>
             <li>
                 <a href="calculator.html">Калькулятор</a>
             </li>
@@ -36,7 +39,7 @@
         </ul>
     </nav>
 </header>
-<section>
+<section class="text">
     <h2>JavaScript</h2>
     <p><i><b>JavaScript</b> — прототипно-ориентированный сценарный язык программирования.</i> Является <i>диалектом</i>
         языка <i>ECMAScript.</i></p>
@@ -49,11 +52,10 @@
         что отличает его от ряда языков программирования, используемых в Web-разработке.</p>
     <p>Название «JavaScript» является зарегистрированным <i>товарным знаком</i> компании <i>Oracle Corporation.</i></p>
 </section>
-<footer>
+<footer class="address">
     <address>
         <a href="mailto:mail@mail"><i>Пишите: mail@mail</i></a>
     </address>
     <p>&#169; Фамилия И.О..год</p>
 </footer>
-</body>
 </html>
