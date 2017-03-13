@@ -68,18 +68,19 @@ table{
     margin: 0 auto;
 }
 td{
-    border: 1px solid #a7a7a7;
     height: 30px;
-    border-radius: 3px;
+
     position: relative;
 }
-button{
+button, input{
     width: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
 }
 table{
     width: 250px;
