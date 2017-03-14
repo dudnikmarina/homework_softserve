@@ -72,7 +72,7 @@ td{
 
     position: relative;
 }
-button, input{
+button, .window-text{
     width: 100%;
     position: absolute;
     top: 0;
@@ -85,7 +85,7 @@ button, input{
 table{
     width: 250px;
 }
-input{
+.window-text{
     text-align: right;
     box-sizing: border-box;
     padding-right: 10px;
