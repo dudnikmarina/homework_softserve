@@ -30,63 +30,61 @@ h1{
 .address{
     text-align: center;
 }
-.link li{
-    margin-right: 5px;
+.nav{
+    text-align: center;
+}
+.dropdown li{
     list-style: none;
-    display: inline;
+    display: inline-block;
+    margin-left: 5px;
 }
-.link-menu li{
-    display: block;
-}
-nav{
-    position: relative;
-}
-.link-menu{
+.dropdown-inside{
     display: none;
     position: absolute;
-    left: 280px;
+    left: 1px;
+    top: 18px;
     border: 1px solid #000000;
     padding: 5px;
     border-radius: 5px;
     background: #ffffff;
 }
-.link-menu li{
+ul.dropdown li {
+    position: relative;
+}
+ul.dropdown, ul.dropdown-inside {
+    list-style-type: none;
+}
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
     display: block;
-}
-nav{
-    text-align: center;
-}
-
-nav:hover .link-menu{
-    display:block;
 }
 dd {
    margin-left: 40px;
 }
 table{
-    width: 200px;
+    width: 250px;
     margin: 0 auto;
 }
 td{
-    height: 30px;
-
+    height: 40px;
+}
+.equally{
     position: relative;
+}
+.equally-button{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 button, .window-text{
     width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 100%;
     border: 1px solid #a7a7a7;
     border-radius: 3px;
-}
-table{
-    width: 250px;
 }
 .window-text{
     text-align: right;
     box-sizing: border-box;
     padding-right: 10px;
 }
+
+

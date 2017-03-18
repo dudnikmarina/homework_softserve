@@ -6,40 +6,36 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<header class="menu">
-   <div class="wrapper">
-        <img src="img/webLogo.png" alt="logo" width="180">
-        <h1>Основы Web-технологий</h1>
-   </div>
-    <nav>
-        <ul class="link">
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="web.html">Web-технологии</a>
-            </li>
-            <li>
-                <ul class="link-menu">
+<header>
+    <div class="menu" >
+        <div class="wrapper">
+            <img src="img/webLogo.png" alt="logo" width="180">
+            <h1>Основы Web-технологий</h1>
+        </div>
+        <nav>
+            <div class="nav">
+                <ul class="dropdown">
                     <li>
-                        <a href="html5.html">HTML5</a>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="dropdown-top">
+                        <a class="dropdown-top" href="web.html">Web-технологии</a>
+                        <ul class="dropdown-inside">
+                            <li><a href="html5.html">HTML5</a></li>
+                            <li><a href="css3.html">CSS3</a></li>
+                            <li><a href="javascript.html">JavaScript</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="css3.html">CSS3</a>
+                        <a href="calculator.html">Калькулятор</a>
                     </li>
                     <li>
-                        <a href="javascript.html">JavaScript</a>
+                        <a href="test.html">Тест</a>
                     </li>
                 </ul>
-            </li>
-            <li>
-                <a href="calculator.html">Калькулятор</a>
-            </li>
-            <li>
-                <a href="test.html">Тест</a>
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </nav>
+    </div>
 </header>
 <div class="text">
     <p>Курс предназначен для <i>широкого</i> круга слушателей, которые хотели бы освоить такие <i>Web-технологии</i> как
@@ -47,11 +43,13 @@
         но не имеют предварительных профильных знаний в этой области.<br> <i>Предварительные знания/навыки:</i> уверенное пользование
         ПК и программным обеспечением. Практическая работа будет проводится с использованием текстового редактора Notepad++.</p>
 </div>
-<footer class="address">
-    <address>
-        <a href="mailto:mail@mail"><i>Пишите: mail@mail</i></a>
-    </address>
-    <p>&#169; Фамилия И.О..год</p>
+<footer>
+    <div class="address">
+        <address>
+            <a href="mailto:mail@mail"><i>Пишите: mail@mail</i></a>
+        </address>
+        <p>&#169; Фамилия И.О..год</p>
+    </div>
 </footer>
 </body>
 </html>
