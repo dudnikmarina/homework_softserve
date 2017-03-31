@@ -42,7 +42,7 @@
     <table class="table">
         <tr>
             <td colspan="5">
-                <input type="text" name="text" class="window-text">
+                <input type="text" name="text" id="display" class="window-text" value="0" disabled >
             </td>
         </tr>
         <tr>
@@ -56,10 +56,10 @@
                 <button type="button" name="number">9</button>
             </td>
             <td>
-                <button type="button" name="share">/</button>
+                <button type="button" name="operation">/</button>
             </td>
             <td>
-                <button type="button" name="c">C</button>
+                <button type="button" id="c">C</button>
             </td>
         </tr>
         <tr>
@@ -73,10 +73,10 @@
                 <button type="button" name="number">6</button>
             </td>
             <td>
-                <button type="button" name="multiply">*</button>
+                <button type="button" name="operation">*</button>
             </td>
             <td>
-                <button type="button" name="plus_minus">&#177;</button>
+                <button type="button"  id="pl_mn" >±</button>
             </td>
         </tr>
         <tr>
@@ -90,10 +90,10 @@
                 <button type="button" name="number">3</button>
             </td>
             <td>
-                <button type="button" name="minus">-</button>
+                <button type="button" name="operation">-</button>
             </td>
             <td rowspan="2" class="equally">
-                <button type="button" name="equally" class="equally-button">=</button>
+                <button type="button"id="result" name="operation" class="equally-button">=</button>
             </td>
         </tr>
         <tr>
@@ -101,10 +101,10 @@
                 <button type="button" name="number">0</button>
             </td>
             <td>
-                <button type="button" name="point">.</button>
+                <button type="button" id="decimal">.</button>
             </td>
             <td>
-                <button type="button" name="plus">+</button>
+                <button type="button" name="operation">+</button>
             </td>
         </tr>
     </table>
@@ -118,5 +118,6 @@
         <p>&#169; Фамилия И.О..год</p>
     </div>
 </footer>
+<script src="scripts/script.js"></script>
 </body>
 </html>
