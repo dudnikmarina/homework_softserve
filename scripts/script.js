@@ -80,16 +80,8 @@ function decimal(){
 
     display.value=localDecimalMemory;
 }
-
 function plusMinus() {
-    var localDecimalMemory = display.value;
-    if (memoryNewNum) {
-        localDecimalMemory = '-0';
-        memoryNewNum = false;
-    }
-    if (localDecimalMemory.indexOf('-') == -1) {
-        localDecimalMemory = '-' + localDecimalMemory;
-    }
+    var localDecimalMemory = display.value*-1;
     display.value = localDecimalMemory;
 }
 
