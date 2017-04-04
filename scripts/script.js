@@ -58,10 +58,11 @@ function operation(op){
         else if(memoryPendingOperation==='/'){
             if(localOperationMemory==0){
                 alert(' НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ');
+                return
             }
+
             memoryCurrentNum/=parseFloat(localOperationMemory);
         }
-
         else{
             memoryCurrentNum=parseFloat(localOperationMemory);
         }

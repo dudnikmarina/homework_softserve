@@ -6,6 +6,11 @@ q1.addEventListener('click', questions);
 q2.addEventListener('click', questions);
 q3.addEventListener('click', questions);
 function questions(){
-  rez+=2;
+    if(rez==0){
+        rez+=2;
+    }
     console.log('клик по кнопки'+rez);
+
 }
+
+
