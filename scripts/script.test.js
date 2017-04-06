@@ -29,26 +29,24 @@ function stopTest(){
     for(i=0; i<document.getElementsByName("table").length; i++){
         if(document.getElementsByName("table")[i].checked) {
             if(i==1){
-                ball+=1;
-                answer+=0.5;
             }
             else if(i==2){
-                ball+=1;
-                answer+=0.5;
             }
         }
+        ball+=2;
+        answer++;
     }
+
     for(i=0; i<document.getElementsByName("form").length; i++){
         if(document.getElementsByName("form")[i].checked) {
-            if(i==0){
-                ball+=1;
-                answer+=0.5;
+            if(i==0) {
             }
             else if(i==1){
-                ball+=1;
-                answer+=0.5;
+
             }
         }
+        ball+=2;
+        answer++;
     }
     alert('Правельных ответов '+(answer/5)*100+' %. Вы набрали '+ ball+' баллов!' );
 
