@@ -57,7 +57,8 @@ function operation(op){
         }
         else if(memoryPendingOperation==='/'){
             if(localOperationMemory==0){
-                alert(' НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ');
+                var localDecimalMemory=' Деление на ноль невозможно';
+                display.value=localDecimalMemory;
                 return
             }
 
