@@ -91,7 +91,7 @@ function plusMinus() {
 }
 
 function clear(){
-var localDecimalMemory='0';
+    var localDecimalMemory=0;
     display.value=localDecimalMemory;
 }
 

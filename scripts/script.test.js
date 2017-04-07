@@ -1,57 +1,37 @@
-var ball=0,
-    answer=0;
-function stopTest(){
-    var i=0;
-    for(i=0; i<document.getElementsByName("link").length; i++){
-        if(document.getElementsByName("link")[i].checked) {
-            if(i==0){
-                ball+=2;
-                answer++;
-            }
-        }
+var answer = 0,
+    ball=0,
+    button = document.getElementById("input"),
+    questionsQuantity = document.getElementsByClassName("question").length,
+    q1 = document.getElementsByName("link"),
+    q2 = document.getElementsByName("list"),
+    q3 = document.getElementsByName("info"),
+    q4 = document.getElementsByName("table"),
+    q5 = document.getElementsByName("form");
+button.onclick = function() {
+    if (q1[0].checked) {
+        answer++;
+        ball+=2;
     }
-    for(i=0; i<document.getElementsByName("list").length; i++){
-        if(document.getElementsByName("list")[i].checked) {
-            if(i==2){
-                ball+=2;
-                answer++;
-            }
-        }
+    if (q2[2].checked) {
+        answer++;
+        ball+=2;
     }
-    for(i=0; i<document.getElementsByName("info").length; i++){
-        if(document.getElementsByName("info")[i].checked) {
-            if(i==2){
-                ball+=2;
-                answer++;
-            }
-        }
+    if (q3[3].checked) {
+        answer++;
+        ball+=2;
     }
-    for(i=0; i<document.getElementsByName("table").length; i++){
-        if(document.getElementsByName("table")[i].checked) {
-            if(i==1){
-                ball+=1;
-                answer+=0.5;
-            }
-            else if(i==2){
-                ball+=1;
-                answer+=0.5;
-            }
-        }
+    if (q4[1].checked && q4[2].checked && !q4[0].checked && !q4[3].checked) {
+        answer++;
+        ball+=2;
     }
-    for(i=0; i<document.getElementsByName("form").length; i++){
-        if(document.getElementsByName("form")[i].checked) {
-            if(i==0){
-                ball+=1;
-                answer+=0.5;
-            }
-            else if(i==1){
-                ball+=1;
-                answer+=0.5;
-            }
-        }
+    if (q5[0].checked && q5[1].checked && !q5[2].checked && !q5[3].checked) {
+        answer++;
+        ball+=2;
     }
-    alert('Правельных ответов '+(answer/5)*100+' %. Вы набрали '+ ball+' баллов.' );
-
+    alert("Вы набрали " + ball +
+    " балл. Процент правильных ответов - " + ((answer/5)*100+"%"));
+    answer = 0;
+    ball=0;
 }
 
 
